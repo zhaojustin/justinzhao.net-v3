@@ -1,25 +1,28 @@
 import "./App.css";
 
-import Wrapper from "./components/Wrapper/Wrapper";
+import theme from "./theme.js";
+import { ThemeProvider } from "@mui/material/styles";
 
-import Container from "@mui/material/Container";
+import Wrapper from "./components/Wrapper/Wrapper";
 import Box from "@mui/material/Box";
 
 function App() {
   return (
-    <div className="App">
-      <Box display="flex" justifyContent="center" alignItems="center">
-        <Box
-          sx={{
-            width: "100vw",
-            height: "100vh",
-            backgroundColor: "",
-          }}
-        >
-          <Wrapper />
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Box display="flex" justifyContent="center" alignItems="center">
+          <Box
+            sx={{
+              width: "100vw",
+              height: "100vh",
+              backgroundColor: "",
+            }}
+          >
+            <Wrapper />
+          </Box>
         </Box>
-      </Box>
-    </div>
+      </div>
+    </ThemeProvider>
   );
 }
 

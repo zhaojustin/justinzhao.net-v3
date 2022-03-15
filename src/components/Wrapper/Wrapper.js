@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 class Wrapper extends React.Component {
   render() {
     return (
-      <div className="Wrapper">
+      <Box className="Wrapper">
         <Box
           sx={{
             display: "flex",
@@ -20,7 +20,7 @@ class Wrapper extends React.Component {
           <Menu />
           <Content />
         </Box>
-      </div>
+      </Box>
     );
   }
 }
