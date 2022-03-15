@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+
+import Link from "@mui/material/Link";
 
 class Menu extends React.Component {
   render() {
@@ -7,8 +9,12 @@ class Menu extends React.Component {
       <div>
         <h1>Menu</h1>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/Photography">Photography</Link>
+          <Link component={RouterLink} to="/">
+            Home
+          </Link>
+          <Link component={RouterLink} to="/Photography">
+            Photography
+          </Link>
         </nav>
       </div>
     );
