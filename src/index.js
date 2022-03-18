@@ -5,14 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Content/Home.js";
+import About from "./components/Content/About.js";
 import Photography from "./components/Content/Photography.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="Home" element={<Home />} />
+        <Route path="/" element={<About />} />
         <Route path="Photography" element={<Photography />} />
       </Route>
     </Routes>

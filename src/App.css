@@ -1,14 +1,13 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.link:hover {
+  color: rgb(0, 0, 0);
 }
 
-.Wrapper {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 25px;
-  border: 1px;
-  border-style: solid;
+.italic {
+  font-style: italic;
+}
+
+.light {
+  color: rgb(70, 70, 70);
 }

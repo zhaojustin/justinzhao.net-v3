@@ -1,17 +1,31 @@
 import { createTheme } from "@mui/material/styles";
 
-import { purple } from "@mui/material/colors";
+import { cyan, teal } from "@mui/material/colors";
 
 const theme = createTheme({
+  typography: {
+    fontFamily: "Space Mono",
+    h1: {
+      fontSize: "3.5rem",
+    },
+  },
+  components: {
+    //Link
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Space Mono",
+          fontSize: "1.5rem",
+          textDecoration: "none",
+          color: "rgb(70,70,70)",
+        },
+      },
+    },
+    //
+  },
   palette: {
-    primary: {
-      // Purple and green play nicely together.
-      main: purple[500],
-    },
-    secondary: {
-      // This is green.A700 as hex.
-      main: "#11cb5f",
-    },
+    primary: cyan,
+    secondary: teal,
   },
 });
 

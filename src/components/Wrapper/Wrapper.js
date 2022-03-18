@@ -2,24 +2,31 @@ import React from "react";
 
 import Content from "../Content/Content";
 import Menu from "../Menu/Menu";
+import Photo from "../Photo/Photo.js";
 
 import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 
 class Wrapper extends React.Component {
   render() {
     return (
-      <Box className="Wrapper">
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            p: 1,
-            m: 1,
-          }}
-        >
-          <Menu />
-          <Content />
-        </Box>
+      <Box
+        sx={{
+          p: 3,
+          m: 3,
+        }}
+      >
+        <Grid container spacing={3}>
+          <Grid item xs={4}>
+            <Menu />
+          </Grid>
+          <Grid item xs={0} md={4}>
+            <Photo />
+          </Grid>
+          <Grid item xs={4}>
+            <Content />
+          </Grid>
+        </Grid>
       </Box>
     );
   }
