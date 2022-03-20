@@ -8,6 +8,10 @@ const theme = createTheme({
     h1: {
       fontSize: "3.5rem",
     },
+    p: {
+      fontFamily: "Roboto",
+      fontSize: "1.2rem",
+    },
   },
   components: {
     //Link

@@ -7,6 +7,9 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/Content/About.js";
 import Photography from "./components/Content/Photography.js";
+import Eats from "./components/Content/Eats";
+import Misc from "./components/Content/Misc";
+import Projects from "./components/Content/Projects";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -14,6 +17,9 @@ ReactDOM.render(
       <Route path="/" element={<App />}>
         <Route path="/" element={<About />} />
         <Route path="Photography" element={<Photography />} />
+        <Route path="Eats" element={<Eats />} />
+        <Route path="Misc" element={<Misc />} />
+        <Route path="Projects" element={<Projects />} />
       </Route>
     </Routes>
   </BrowserRouter>,

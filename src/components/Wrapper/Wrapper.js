@@ -12,15 +12,15 @@ class Wrapper extends React.Component {
     return (
       <Box
         sx={{
-          p: 3,
-          m: 3,
+          p: { sm: 3, md: 7 },
+          m: 6,
         }}
       >
         <Grid container spacing={3}>
           <Grid item xs={4}>
             <Menu />
           </Grid>
-          <Grid item xs={0} md={4}>
+          <Grid item xs={4}>
             <Photo />
           </Grid>
           <Grid item xs={4}>
