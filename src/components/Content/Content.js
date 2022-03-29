@@ -7,13 +7,7 @@ class Content extends React.Component {
   render() {
     return (
       <Grid>
-        <Grid
-          item
-          container
-          direction="column"
-          alignItems="flex-end"
-          justifyContent="flex-start"
-        >
+        <Grid item container direction="column" justifyContent="flex-start">
           <Outlet />
         </Grid>
       </Grid>

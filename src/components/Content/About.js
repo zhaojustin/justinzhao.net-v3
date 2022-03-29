@@ -9,7 +9,7 @@ class About extends React.Component {
   render() {
     return (
       <Fade in={true}>
-        <Grid container justifyContent="flex-end">
+        <Grid container>
           {/* HEADER */}
           <Box>
             <Typography variant="h1">About Me</Typography>

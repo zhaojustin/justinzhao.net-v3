@@ -12,7 +12,6 @@ class Photo extends React.Component {
           <Box
             component="img"
             sx={{
-              mt: { xs: 10, lg: 30 },
               justifyContent: "center",
               maxWidth: { xs: 290, lg: "100%" },
             }}
